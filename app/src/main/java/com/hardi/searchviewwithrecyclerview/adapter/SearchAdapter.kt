@@ -40,4 +40,10 @@ class SearchAdapter(
     override fun getItemCount(): Int {
         return carList.size
     }
+
+    fun filterList(filterlist: ArrayList<CarModel>) {
+        carList = filterlist
+        notifyDataSetChanged()
+    }
+
 }
